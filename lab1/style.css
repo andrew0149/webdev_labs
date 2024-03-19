@@ -1,0 +1,51 @@
+body {
+    padding-left: 5%;
+    width: 800px;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+.note {
+    margin-bottom: 0px;
+}
+
+div {
+    font-size: 23px;
+    text-align: justify;
+}
+
+a {
+    color: #0070C0;
+}
+
+ol {
+    padding-left: 0;
+    list-style: inside decimal;
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+ul::before {
+    content: attr(aria-label);
+}
+
+.excluded>li::before {
+    content: "-";
+    margin-right: 5px;
+}
+
+img {
+    width: 120px;
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 7px dotted;
+    height: 7px;
+}

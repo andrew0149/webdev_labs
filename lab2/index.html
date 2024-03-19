@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+</head>
+
+<body>
+    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+        <p>Name</p>
+        <input type="text" name='name' id="name_input" placeholder="Maxim">
+
+        <p>Password</p>
+        <input type="password" name='password' id="password_input">
+
+        <p>Tel</p>
+        <input type="tel" name="phone" id="phone_input" placeholder="0-000-000">
+
+        <p>Gender</p>
+        <span><input type="radio" name="gender" id="gender_selector1" value="male" checked>Male</span>
+        <span><input type="radio" name="gender" id="gender_selector2" value="female">Female</span>
+
+        <p>Meal</p>
+        <span><input type="checkbox" name="meal" id="meal_selector1" value="pizza">Pizza</span>
+        <span><input type="checkbox" name="meal" id="meal_selector2" value="salad" checked>Salad</span>
+        <span><input type="checkbox" name="meal" id="meal_selector3" value="burger">Burger</span>
+
+        <p>Quantity</p>
+        <input type="number" name="quantity" id="quantity_input" min="0" max="10" value="3">
+
+        <p>Favourite color</p>
+        <input type="color" name="fav_color" id="color_input">
+
+        <p>About yourself</p>
+        <textarea name="about" id="about_input" cols="20" rows="2"></textarea>
+
+        <p>Your photo</p>
+        <input type="file" name="photo" id="photo_upload">
+
+        <br><br>
+        <button type="submit">Send</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+
+</html>
