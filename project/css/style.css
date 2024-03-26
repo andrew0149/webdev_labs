@@ -19,6 +19,15 @@ header {
 
 .logo {
     margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    transition: all 1s ease-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 5px white, inset 0 0 10px 5px white;
 }
 
 .wrapper {
@@ -91,9 +100,26 @@ main {
 }
 
 .blocks {
+    padding: 25px;
     text-align: center;
     width: 25%;
 }
+
+.blocks:hover {
+    animation: block-zoom 0.5s both ease-out;
+}
+
+@keyframes block-zoom {
+    25% {
+        box-shadow: 0 0 20px lightgray;
+    }
+
+    100% {
+        transform: scale(1.2);
+        box-shadow: 0 0 100px gray;
+    }
+}
+
 
 .blocks_images {
     margin-bottom: 15px;
@@ -132,27 +158,48 @@ input {
     text-indent: 20px;
 }
 
+input:focus {
+    animation: input-focus 0.5s both ease-in-out;
+}
+
+@keyframes input-focus {
+    25% {
+        background-color: #e1f2ff;
+    }
+
+    50% {
+        outline-offset: 10px;
+    }
+
+    100% {
+        background-color: #bee3ff;
+
+    }
+}
+
 input#submit {
     width: 308px;
     height: 44px;
     background-color: #ffd429;
     border-width: 1px;
     border-color: gray;
+    transition: all 1s ease-out;
 }
 
 input#submit:hover {
+    transform: scale(1.1);
+    font-weight: bold;
     background-color: yellow;
 }
 
 /* Footer */
 
 footer {
-    background: linear-gradient(
-        to bottom, 
-        rgba(30,87,153,1) 0%,
-        rgba(41,137,216,1) 50%,
-        rgba(32,124,202,1) 50%,
-        rgba(125,185,232,1) 100%);
+    background: linear-gradient(to bottom,
+            rgba(30, 87, 153, 1) 0%,
+            rgba(41, 137, 216, 1) 50%,
+            rgba(32, 124, 202, 1) 50%,
+            rgba(125, 185, 232, 1) 100%);
 }
 
 .copyright {
