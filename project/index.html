@@ -59,10 +59,10 @@
         <div class="container">
             <h2 class="section_title">Форма заказа обратного звонка</h2>
             <form action="#" method="get" enctype="application/x-www-form-urlencoded">
-                <input type="text" name="name" placeholder="Имя">
+                <input type="text" required name="name" placeholder="Имя">
                 <input type="email" name="email" placeholder="Введите свой E-mail">
-                <input type="tel" name="phone" placeholder="Телефон">
-                <input type="text" name="question" placeholder="Какая тема Вас интересует?">
+                <input type="tel" required pattern="(\+7|8)\s?\(?[0-9]{3}\)?([\-\s]?[0-9]){7}" name="phone" placeholder="Телефон">
+                <input type="text" required name="question" placeholder="Какая тема Вас интересует?">
                 <input type="submit" id="submit" value="Отправить вопрос">
             </form>
         </div>

@@ -162,6 +162,21 @@ input:focus {
     animation: input-focus 0.5s both ease-in-out;
 }
 
+input:invalid {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+input:invalid:required {
+    box-shadow: 0px 0px 10px red;
+    border: 2px solid red;
+}
+
+input:valid {
+    box-shadow: 0px 0px 10px #7db9e8;
+    border: 2px solid #7db9e8;
+}
+
+
 @keyframes input-focus {
     25% {
         background-color: #e1f2ff;
