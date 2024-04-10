@@ -1,5 +1,5 @@
 function getRandomInt(start, end) {
-    return Math.round(Math.round(start + Math.random() * (end - start + 1)));
+    return Math.floor(start + Math.random() * (end - start + 1));
 }
 
 function guessTheNumberGame() {
