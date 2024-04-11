@@ -54,14 +54,55 @@
             </div>
         </div>
     </main>
-
-    <section>
+    <section id="order_form">
+        <div class="container">
+            <h2 class="section_title">Реквизиты заказа</h2>
+            <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+                <div class="labelled_input">
+                    <label for="name">Имя</label>
+                    <input name="name" id="name">
+                </div>
+                <div class="labelled_input">
+                    <label for="surname">Фамилия</label>
+                    <input name="surname" id="surname">
+                </div>
+                <div class="labelled_input">
+                    <label for="phone">Номер телефона</label>
+                    <input name="phone" id="phone" placeholder="X-XXX-XXX-XX-XX">
+                </div>
+                <div class="labelled_input">
+                    <label for="dest">Адрес назначения</label>
+                    <input id="dest" name="destination">
+                </div>
+                <div class="labelled_input">
+                    <div id="date_time_label">
+                        <label for="date">Дата</label> и <label for="time">Время</label>
+                    </div>
+                    <input name="date" id="date">
+                </div>
+                <div class="labelled_input">
+                    <input name="time" id="time">
+                </div>
+                <div class="labelled_input">
+                    <label for="quantity">Количество</label>
+                    <input name="quantity" id="quantity">
+                </div>
+                <div class="labelled_input">
+                    <label for="payment">Способ оплаты</label>
+                    <input name="payment" id="payment">
+                </div>
+                <input type="submit" id="submit" value="Отправить заказ">
+            </form>
+        </div>
+    </section>
+    <section id="call_form">
         <div class="container">
             <h2 class="section_title">Форма заказа обратного звонка</h2>
             <form action="#" method="get" enctype="application/x-www-form-urlencoded">
                 <input type="text" required name="name" placeholder="Имя">
                 <input type="email" name="email" placeholder="Введите свой E-mail">
-                <input type="tel" required pattern="(\+7|8)\s?\(?[0-9]{3}\)?([\-\s]?[0-9]){7}" name="phone" placeholder="Телефон">
+                <input type="tel" required pattern="(\+7|8)\s?\(?[0-9]{3}\)?([\-\s]?[0-9]){7}" name="phone"
+                    placeholder="Телефон">
                 <input type="text" required name="question" placeholder="Какая тема Вас интересует?">
                 <input type="submit" id="submit" value="Отправить вопрос">
             </form>

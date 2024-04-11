@@ -120,7 +120,6 @@ main {
     }
 }
 
-
 .blocks_images {
     margin-bottom: 15px;
 }
@@ -137,6 +136,11 @@ section {
     background-color: #ecf3f8;
     padding-top: 60px;
     padding-bottom: 90px;
+}
+
+section#order_form {
+    background: linear-gradient(to top, #7db9e8 0%, #2e7be8 48%);
+    color: white;
 }
 
 .section_title {
@@ -193,6 +197,8 @@ input:valid {
 }
 
 input#submit {
+    margin-top: 30px;
+    text-indent: 0;
     width: 308px;
     height: 44px;
     background-color: #ffd429;
@@ -205,6 +211,24 @@ input#submit:hover {
     transform: scale(1.1);
     font-weight: bold;
     background-color: yellow;
+}
+
+.labelled_input {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+label {
+    margin: auto 0 auto 0;
+}
+
+#date_time_label {
+    margin: auto 0 auto 0;
+}
+
+input#time {
+    margin-left: auto;
 }
 
 /* Footer */
