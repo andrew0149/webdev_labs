@@ -89,7 +89,11 @@
                 </div>
                 <div class="labelled_input">
                     <label for="payment">Способ оплаты</label>
-                    <input name="payment" id="payment">
+                    <select name="paymentmethod" id="paymentmethod">
+                        <option value="cash">Наличными</option>
+                        <option value="card">Картой</option>
+                        <option value="paypal">Переводом на PayPal</option>
+                    </select>
                 </div>
                 <input type="submit" id="submit" value="Отправить заказ">
             </form>
