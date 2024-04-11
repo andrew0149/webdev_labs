@@ -170,6 +170,7 @@ label {
 }
 
 input {
+    font: inherit;
     width: 300px;
     height: 30px;
     margin-bottom: 15px;
@@ -209,7 +210,8 @@ input:valid {
     }
 }
 
-input#submit {
+#submit_button {
+    font: inherit;
     margin-top: 30px;
     text-indent: 0;
     width: 308px;
@@ -220,7 +222,7 @@ input#submit {
     transition: all 1s ease-out;
 }
 
-input#submit:hover {
+#submit_button:hover {
     transform: scale(1.1);
     font-weight: bold;
     background-color: yellow;
@@ -230,7 +232,13 @@ input#time {
     margin-left: auto;
 }
 
+input#date, input#time {
+    text-indent: 9px;
+}
+
 select {
+    font: inherit;
+    text-indent: 20px;
     width: 308px;
     height: 36px;
 }

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -60,42 +61,42 @@
             <form action="#" method="get" enctype="application/x-www-form-urlencoded">
                 <div class="labelled_input">
                     <label for="name">Имя</label>
-                    <input name="name" id="name">
+                    <input type="text" name="name" id="name">
                 </div>
                 <div class="labelled_input">
                     <label for="surname">Фамилия</label>
-                    <input name="surname" id="surname">
+                    <input type="text" name="surname" id="surname">
                 </div>
                 <div class="labelled_input">
                     <label for="phone">Номер телефона</label>
-                    <input name="phone" id="phone" placeholder="X-XXX-XXX-XX-XX">
+                    <input type="tel" name="phone" id="phone" placeholder="X-XXX-XXX-XX-XX">
                 </div>
                 <div class="labelled_input">
                     <label for="dest">Адрес назначения</label>
-                    <input id="dest" name="destination">
+                    <input type="text" id="dest" name="destination">
                 </div>
                 <div class="labelled_input">
                     <div id="date_time_label">
                         <label for="date">Дата</label> и <label for="time">Время</label>
                     </div>
-                    <input name="date" id="date">
+                    <input type="date" name="date" id="date">
                 </div>
                 <div class="labelled_input">
-                    <input name="time" id="time">
+                    <input type="time" name="time" id="time">
                 </div>
                 <div class="labelled_input">
                     <label for="quantity">Количество</label>
-                    <input name="quantity" id="quantity">
+                    <input type="number" name="quantity" id="quantity">
                 </div>
                 <div class="labelled_input">
                     <label for="payment">Способ оплаты</label>
-                    <select name="paymentmethod" id="paymentmethod">
+                    <select name="payment" id="payment">
                         <option value="cash">Наличными</option>
                         <option value="card">Картой</option>
                         <option value="paypal">Переводом на PayPal</option>
                     </select>
                 </div>
-                <input type="submit" id="submit" value="Отправить заказ">
+                <button type="button" id="submit_button" onclick="checkOrderInfo();">Отправить заказ</button>
             </form>
         </div>
     </section>
