@@ -61,33 +61,47 @@
             <form action="#" method="get" enctype="application/x-www-form-urlencoded">
                 <div class="labelled_input">
                     <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
+                    <input type="text" name="name" id="name" required onblur="validateName();">
                 </div>
+                <span id="name_error" class="error"></span>
+
                 <div class="labelled_input">
                     <label for="surname">Фамилия</label>
-                    <input type="text" name="surname" id="surname">
+                    <input type="text" name="surname" id="surname" onblur="validateSurname();">
                 </div>
+                <span id="surname_error" class="error"></span>
+
                 <div class="labelled_input">
                     <label for="phone">Номер телефона</label>
-                    <input type="tel" name="phone" id="phone" placeholder="X-XXX-XXX-XX-XX">
+                    <input type="tel" name="phone" id="phone" placeholder="X-XXX-XXX-XX-XX" required onblur="validatePhone();">
                 </div>
+                <span id="phone_error" class="error"></span>
+
                 <div class="labelled_input">
                     <label for="dest">Адрес назначения</label>
-                    <input type="text" id="dest" name="destination">
+                    <input type="text" id="dest" name="destination" required onblur="validateDestination();">
                 </div>
+                <span id="dest_error" class="error"></span>
+
                 <div class="labelled_input">
                     <div id="date_time_label">
                         <label for="date">Дата</label> и <label for="time">Время</label>
                     </div>
-                    <input type="date" name="date" id="date">
+                    <input type="date" name="date" id="date" required>
                 </div>
+                <span id="date_error" class="error"></span>
+
                 <div class="labelled_input">
-                    <input type="time" name="time" id="time">
+                    <input type="time" name="time" id="time" required value="12:00">
                 </div>
+                <span id="time_error" class="error"></span>
+
                 <div class="labelled_input">
-                    <label for="quantity">Количество</label>
-                    <input type="number" name="quantity" id="quantity">
+                    <label for="quantity">Количество товара</label>
+                    <input type="number" name="quantity" id="quantity" required onblur="validateQuantity();" value="1">
                 </div>
+                <span id="quantity_error" class="error"></span>
+
                 <div class="labelled_input">
                     <label for="payment">Способ оплаты</label>
                     <select name="payment" id="payment">
@@ -96,7 +110,9 @@
                         <option value="paypal">Переводом на PayPal</option>
                     </select>
                 </div>
-                <button type="button" id="submit_button" onclick="checkOrderInfo();">Отправить заказ</button>
+
+                <button type="button" class="submit_button" onclick="checkOrderInfo();">Отправить заказ</button>
+                <span id="order_summary" class="error"></span>
             </form>
         </div>
     </section>
@@ -109,7 +125,7 @@
                 <input type="tel" required pattern="(\+7|8)\s?\(?[0-9]{3}\)?([\-\s]?[0-9]){7}" name="phone"
                     placeholder="Телефон">
                 <input type="text" required name="question" placeholder="Какая тема Вас интересует?">
-                <input type="submit" id="submit" value="Отправить вопрос">
+                <input type="submit" class="submit_button" value="Отправить вопрос">
             </form>
         </div>
     </section>

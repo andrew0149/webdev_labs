@@ -182,7 +182,7 @@ input:focus {
 }
 
 input:invalid {
-    background: rgba(255, 0, 0, 0.2);
+    background: rgb(255, 150, 150);
 }
 
 input:invalid:required {
@@ -210,9 +210,10 @@ input:valid {
     }
 }
 
-#submit_button {
+.submit_button {
     font: inherit;
     margin-top: 30px;
+    margin-bottom: 30px;
     text-indent: 0;
     width: 308px;
     height: 44px;
@@ -222,7 +223,7 @@ input:valid {
     transition: all 1s ease-out;
 }
 
-#submit_button:hover {
+.submit_button:hover {
     transform: scale(1.1);
     font-weight: bold;
     background-color: yellow;
@@ -241,6 +242,15 @@ select {
     text-indent: 20px;
     width: 308px;
     height: 36px;
+}
+
+.error {
+    display: none;
+    margin-bottom: 15px;
+}
+
+p {
+    font: inherit;
 }
 
 /* Footer */
@@ -323,8 +333,25 @@ footer {
         width: 98%;
     }
 
-    button {
+    select {
+        width: 99%;
+    }
+
+    .submit_button {
         width: 100%;
+    }
+
+    label, #date_time_label {
+        margin-bottom: 15px;
+    }
+
+    input#time {
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .labelled_input {
+        flex-direction: column;
     }
 }
 
