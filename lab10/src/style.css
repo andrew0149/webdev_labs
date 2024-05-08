@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.main_title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.blocks {
+    padding: 25px;
+    text-align: center;
+    width: 25%;
+}
+
+.blocks:hover {
+    animation: block-zoom 0.5s both ease-out;
+}
+
+@keyframes block-zoom {
+    25% {
+        box-shadow: 0 0 20px lightgray;
+    }
+
+    100% {
+        transform: scale(1.2);
+        box-shadow: 0 0 100px gray;
+    }
+}
+
+.blocks_images {
+    margin-bottom: 15px;
+}
+
+.images_text {
+    font-weight: 100;
+    font-size: 14px;
+    color: gray;
+}
