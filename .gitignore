@@ -1,0 +1,4 @@
+lab*.zip
+.vscode/*
+study_materials/*
+*/node_modules/*
