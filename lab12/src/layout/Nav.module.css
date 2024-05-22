@@ -1,0 +1,58 @@
+.nav {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    width: 110px;
+    padding-left: 200px;
+}
+
+.links {
+    list-style: none;
+    width: 550px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.buttons {
+    display: flex;
+    width: 450px;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 200px;
+}
+
+.button {
+    display: flex;
+    width: 200px;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#measurement {
+    background-color: #EF7E04;
+}
+
+#calculation {
+    background-color: #3B3A62;
+}
