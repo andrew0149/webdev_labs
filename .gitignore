@@ -1,4 +1,6 @@
 lab*.zip
 .vscode/*
-study_materials/*
-*/node_modules/*
+study_materials/
+*/node_modules/
+*/.venv/
+**/__pycache__/
