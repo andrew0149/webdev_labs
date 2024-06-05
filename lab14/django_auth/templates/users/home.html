@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <style>
+      body {
+        color: green;
+        text-align: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello, {{ user.username|default:'Guest' }}!</h1>
+    <p><b>Welcome to our website</b></p>
+    <div>
+      {% if user.is_authenticated %}
+        <form action="{% url 'logout' %}" method="post">
+          {% csrf_token %}
+          <button>Log Out</button>
+        </form>
+      {% else %}
+        <form action="{% url 'signup' %}" method="post">
+          {% csrf_token %}
+          <button>Sign Up</button>
+        </form>
+        <form action="{% url 'login' %}" method="post">
+          {% csrf_token %}
+          <button>Log in</button>
+        </form>
+      {% endif %}
+    </div>
+  </body>
+</html>
